@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Aman Store</title>
+  <meta charset="UTF-8">
+  <title>Cricket Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to Aman Store 🚀</h1>
-  <p>Your website is working!</p>
+
+<header>
+  <h1>🏏 Cricket Store</h1>
+
+  <!-- Virat Kohli Image -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Virat_Kohli.jpg" class="virat">
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#products">Products</a>
+    <a href="#" onclick="showContact()">Contact</a>
+    <button onclick="viewCart()">Cart 🛒 (<span id="cartCount">0</span>)</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Welcome to Cricket Store</h2>
+  <p>Best cricket gear at best price</p>
+
+  <!-- Address -->
+  <p><b>📍 Address:</b> Shiamgir, Delhi, India</p>
+</section>
+
+<section id="products" class="products">
+  <h2>Our Products</h2>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/150">
+    <h3>Cricket Bat</h3>
+    <p>₹2000</p>
+    <button onclick="addToCart('Cricket Bat',2000)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/150">
+    <h3>Cricket Ball</h3>
+    <p>₹500</p>
+    <button onclick="addToCart('Cricket Ball',500)">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/150">
+    <h3>Batting Gloves</h3>
+    <p>₹1200</p>
+    <button onclick="addToCart('Gloves',1200)">Add to Cart</button>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
